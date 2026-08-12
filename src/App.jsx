@@ -50,7 +50,7 @@ function App() {
           id="home"
           className="hero grid md:grid-cols-2 items-center pt-12 xl:gap-0 gap-6 grid-cols-1 min-h-screen"
         >
-          <div className="animate__animated animate__fadeInUp animate__delay-3s">
+          <div className="animate__animated animate__fadeInUp animate__delay-3s text-center md:text-left">
             <div className="mb-8">
               <h1 className="text-5xl sm:text-6xl font-bold mb-2 text-white">
                 Likhith Gowda B R
@@ -66,7 +66,7 @@ function App() {
               direction="top"
               className="mb-8 text-gray-300 text-lg"
             />
-            <div className="flex items-center flex-wrap sm:gap-4 gap-3">
+            <div className="flex items-center flex-wrap sm:gap-4 gap-3 justify-center md:justify-start">
               <a
                 href="https://drive.google.com/file/d/1N__x3gnm6zM0x6lHM_5_SF2euAmhBbtw/view?usp=sharing"
                 target="_blank"
@@ -86,7 +86,7 @@ function App() {
             </div>
           </div>
 
-          <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
+          <div className="md:ml-auto mx-auto max-w-[380px] w-full animate__animated animate__fadeInUp animate__delay-4s">
             <ProfileCard
               name="Likhith Gowda"
               title=""
@@ -149,7 +149,7 @@ function App() {
               </div>
 
               <ShinyText
-                text="Working with heart, building with logic."
+                // text="Working with heart, building with logic."
                 disabled={false}
                 speed={3}
                 className="text-sm md:text-base text-violet-400"
@@ -342,7 +342,7 @@ function App() {
               <form
                 action="https://formspree.io/f/xwleowrg"
                 method="POST"
-                className="bg-zinc-800 p-10 w-full rounded-md"
+                className="bg-zinc-800 p-6 sm:p-10 w-full box-border rounded-md"
                 autoComplete="off"
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -352,21 +352,20 @@ function App() {
                 <div className="flex flex-col gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="font-semibold">Full Name</label>
-                    <input type="text" name="Name" placeholder="Input Name..." className="border border-zinc-500 p-2 rounded-md" required />
+                    <input type="text" name="Name" placeholder="Input Name..." className="border border-zinc-500 p-2 rounded-md w-full" required />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label className="font-semibold">Email</label>
-                    <input type="email" name="Email" placeholder="Input Email..." className="border border-zinc-500 p-2 rounded-md" required />
+                    <input type="email" name="Email" placeholder="Input Email..." className="border border-zinc-500 p-2 rounded-md w-full" required />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label htmlFor="message" className="font-semibold">Message</label>
                     <textarea
                       name="message"
                       id="message"
-                      cols="45"
                       rows="7"
                       placeholder="Message..."
-                      className="border border-zinc-500 p-2 rounded-md"
+                      className="border border-zinc-500 p-2 rounded-md w-full"
                       required
                     ></textarea>
                   </div>
