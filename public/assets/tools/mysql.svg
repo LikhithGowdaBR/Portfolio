@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="mysqlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00758F"/>
+      <stop offset="100%" stop-color="#336791"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="url(#mysqlGrad)"/>
+  <g fill="white" opacity="0.95" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    <text x="60" y="85" text-anchor="middle">SQL</text>
+  </g>
+</svg>

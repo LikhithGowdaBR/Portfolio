@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#04303a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#pg)"/>
+  <!-- Tic Tac Toe Grid -->
+  <g transform="translate(300, 150)" filter="url(#glow)">
+    <!-- Grid lines -->
+    <line x1="-50" y1="-50" x2="-50" y2="50" stroke="#93C5FD" stroke-width="3"/>
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#93C5FD" stroke-width="3"/>
+    <line x1="50" y1="-50" x2="50" y2="50" stroke="#93C5FD" stroke-width="3"/>
+    <line x1="-50" y1="-50" x2="50" y2="-50" stroke="#93C5FD" stroke-width="3"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#93C5FD" stroke-width="3"/>
+    <line x1="-50" y1="50" x2="50" y2="50" stroke="#93C5FD" stroke-width="3"/>
+    <!-- X -->
+    <line x1="-40" y1="-40" x2="-20" y2="-20" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-20" y1="-40" x2="-40" y2="-20" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+    <!-- O -->
+    <circle cx="0" cy="-25" r="12" fill="none" stroke="#60A5FA" stroke-width="3"/>
+    <!-- X -->
+    <line x1="20" y1="-40" x2="40" y2="-20" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+    <line x1="40" y1="-40" x2="20" y2="-20" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+    <!-- O -->
+    <circle cx="-25" cy="0" r="12" fill="none" stroke="#60A5FA" stroke-width="3"/>
+    <!-- O -->
+    <circle cx="25" cy="0" r="12" fill="none" stroke="#60A5FA" stroke-width="3"/>
+    <!-- X -->
+    <line x1="-40" y1="20" x2="-20" y2="40" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-20" y1="20" x2="-40" y2="40" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="40" y="370" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="white">Tic Tac Toe</text>
+</svg>

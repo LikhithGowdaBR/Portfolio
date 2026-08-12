@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#052e12"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#pg)"/>
+  <!-- Chat Bubbles -->
+  <g filter="url(#glow)">
+    <!-- Left bubble -->
+    <rect x="80" y="100" width="150" height="50" rx="20" fill="#86EFAC" opacity="0.9" stroke="#22C55E" stroke-width="2"/>
+    <polygon points="80,130 60,140 80,150" fill="#86EFAC"/>
+    <text x="110" y="130" font-family="Arial" font-size="14" fill="#0a2e0a">Hello!</text>
+    <!-- Right bubble -->
+    <rect x="370" y="160" width="150" height="50" rx="20" fill="#4ADE80" opacity="0.85" stroke="#22C55E" stroke-width="2"/>
+    <polygon points="520,190 540,180 520,200" fill="#4ADE80"/>
+    <text x="395" y="190" font-family="Arial" font-size="14" fill="white">How are you?</text>
+    <!-- Left bubble 2 -->
+    <rect x="100" y="230" width="140" height="50" rx="20" fill="#86EFAC" opacity="0.8" stroke="#22C55E" stroke-width="2"/>
+    <polygon points="100,260 80,270 100,280" fill="#86EFAC"/>
+    <text x="125" y="260" font-family="Arial" font-size="14" fill="#0a2e0a">I'm great!</text>
+  </g>
+  <!-- Message Icon -->
+  <g transform="translate(300, 340)" opacity="0.6">
+    <rect x="-20" y="-15" width="40" height="30" rx="3" fill="none" stroke="#86EFAC" stroke-width="2"/>
+    <path d="M -20 -15 L 0 0 L 20 -15" fill="none" stroke="#86EFAC" stroke-width="1.5"/>
+  </g>
+  <text x="40" y="370" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="white">WhatsApp CRUD</text>
+</svg>

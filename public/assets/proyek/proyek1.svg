@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#0b1a3a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#pg)"/>
+  <!-- Map Pin -->
+  <g transform="translate(300, 120)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="40" fill="#60A5FA" opacity="0.2"/>
+    <path d="M 0 -35 C -19 -35 -35 -19 -35 0 C -35 20 0 50 0 50 C 0 50 35 20 35 0 C 35 -19 19 -35 0 -35 Z" fill="#93C5FD" stroke="#3B82F6" stroke-width="2"/>
+    <circle cx="0" cy="-5" r="12" fill="#3B82F6"/>
+  </g>
+  <!-- Compass Rose -->
+  <g transform="translate(150, 250)" opacity="0.6">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#60A5FA" stroke-width="2"/>
+    <line x1="0" y1="-25" x2="0" y2="-35" stroke="#60A5FA" stroke-width="2"/>
+    <text x="-8" y="-38" font-family="Arial" font-size="16" fill="#93C5FD" font-weight="bold">N</text>
+  </g>
+  <!-- Location Dots -->
+  <circle cx="450" cy="280" r="8" fill="#93C5FD" opacity="0.7"/>
+  <circle cx="500" cy="320" r="6" fill="#60A5FA" opacity="0.5"/>
+  <circle cx="380" cy="310" r="7" fill="#93C5FD" opacity="0.6"/>
+  <text x="40" y="370" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="white">ExploreHive</text>
+</svg>
