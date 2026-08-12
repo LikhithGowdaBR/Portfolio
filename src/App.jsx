@@ -68,7 +68,7 @@ function App() {
             />
             <div className="flex items-center flex-wrap sm:gap-4 gap-3 justify-center md:justify-start">
               <a
-                href="https://drive.google.com/drive/folders/1VaJdreZom_rmTwyQbXivQqPyK92ib_Xz?usp=drive_link"
+                href="https://drive.google.com/drive/folders/1VaJdreZom_rmTwyQbXivQqPyK92ib_Xz?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold bg-transparent p-4 px-8 rounded-full border border-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 flex items-center gap-2"
